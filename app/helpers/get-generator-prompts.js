@@ -1,11 +1,9 @@
 'use strict';
 
 /**
- * @param {Object} generator
- *
  * @returns {Array}
  */
-function getModulePrompts( generator ) {
+function getGeneratorPrompts() {
   return [
     {
       type: 'confirm',
@@ -16,4 +14,4 @@ function getModulePrompts( generator ) {
   ];
 }
 
-module.exports = getModulePrompts;
+module.exports = getGeneratorPrompts;
