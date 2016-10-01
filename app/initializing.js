@@ -5,13 +5,13 @@
 /**
  * module dependencies
  */
-var createPromptAnswers = require( 'yeoman-prompting-helpers' ).createPromptAnswers;
+var PromptAnswers = require( 'yeoman-prompting-helpers' ).PromptAnswers;
 
 /**
  * @returns {undefined}
  */
 function initializing() {
-  this.options.PromptAnswers = createPromptAnswers( this.options.PromptAnswers );
+  this.options.PromptAnswers = this.options.PromptAnswers || new PromptAnswers();
 }
 
 module.exports = initializing;

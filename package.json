@@ -27,9 +27,11 @@
   },
   "dependencies": {
     "chalk": "1.1.3",
-    "eslint": "3.7.0",
-    "eslint-config-dan-nl": "git://github.com/dan-nl/eslint-config-dan-nl.git#f4821a5bb48891cedceb48d006bfc496ac57f6b6",
     "yeoman-generator": "0.24.1",
     "yeoman-prompting-helpers": "git://github.com/dan-nl/yeoman-prompting-helpers.git"
+  },
+  "devDependencies": {
+    "eslint": "3.7.0",
+    "eslint-config-dan-nl": "git://github.com/dan-nl/eslint-config-dan-nl.git"
   }
 }
