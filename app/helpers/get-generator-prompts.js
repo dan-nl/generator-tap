@@ -6,10 +6,10 @@
 function getGeneratorPrompts() {
   return [
     {
-      type: 'confirm',
+      default: true,
+      message: 'install sinon as well',
       name: 'install-sinon',
-      message: 'install sinon as well:',
-      default: true
+      type: 'confirm'
     }
   ];
 }

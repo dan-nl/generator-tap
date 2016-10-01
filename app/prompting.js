@@ -1,3 +1,5 @@
+/* eslint no-invalid-this: off */
+
 'use strict';
 
 /**
@@ -10,7 +12,7 @@ var promptingHelper = require( 'yeoman-prompting-helpers' ).promptingHelper;
  * @returns {Promise}
  */
 function prompting() {
-  return promptingHelper( this, getGeneratorPrompts );
+  return promptingHelper( this, getGeneratorPrompts() );
 }
 
 module.exports = prompting;
