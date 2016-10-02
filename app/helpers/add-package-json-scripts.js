@@ -18,8 +18,8 @@ var fs = require( 'fs' );
  * @returns {undefined}
  */
 function addPackageJsonScript( generator ) {
-  var new_content;
   var extend_content;
+  var new_content;
 
   generator.log( chalk.cyan( 'adding scripts' ) + ' to package.json for tap' );
   generator.log( chalk.green( '   script' ) + ' cover:browser' );
