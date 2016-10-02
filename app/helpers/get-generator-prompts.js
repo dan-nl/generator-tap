@@ -7,9 +7,18 @@ function getGeneratorPrompts() {
   return [
     {
       default: true,
-      message: 'install sinon as well',
-      name: 'install-sinon',
+      message: 'install tap',
+      name: 'install-tap',
       type: 'confirm'
+    },
+    {
+      default: true,
+      message: 'install sinon',
+      name: 'install-sinon',
+      type: 'confirm',
+      when: function ( answers ) {
+        return answers[ 'install-tap' ];
+      }
     }
   ];
 }
