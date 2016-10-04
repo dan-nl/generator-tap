@@ -18,11 +18,11 @@ var chalk = require( 'chalk' );
 function addDirectory( generator ) {
   try {
     generator.log( chalk.cyan( 'directory' ) );
-    generator.log( chalk.green( '   create' ) + ' ./test' );
     fs.mkdirSync( generator.destinationPath( 'test' ) );
+    generator.log( chalk.green( '   create' ) + ' ./test' );
   } catch ( err ) {
     if ( err.code === 'EEXIST' ) {
-      generator.log( chalk.cyan( 'exists' ) + ' ./test' );
+      generator.log( chalk.green( '   exists' ) + ' ./test' );
     } else {
       generator.log( err.message );
     }

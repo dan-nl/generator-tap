@@ -17,12 +17,12 @@ function install() {
     return;
   }
 
+  this.log( chalk.cyan( 'install' ) );
+  this.log( chalk.green( '   package' ) + ' tap' );
+
   if ( this.options.PromptAnswers.get( 'install-sinon' ) ) {
     modules.push( 'sinon' );
-  }
-
-  if ( modules.length > 0 ) {
-    this.log( chalk.cyan( 'npm install' ) + ' for ' + this.options.namespace );
+    this.log( chalk.green( '   package' ) + ' sinon' );
   }
 
   this.npmInstall(

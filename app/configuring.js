@@ -5,7 +5,7 @@
 /**
  * module dependencies
  */
-var addDirectory = require( './helpers/add-directory' );
+var addPackageJsonScript = require( './helpers/add-package-json-script' );
 
 /**
  * @returns {undefined}
@@ -15,7 +15,7 @@ function writing() {
     return;
   }
 
-  addDirectory( this );
+  addPackageJsonScript( this );
 }
 
 module.exports = writing;
