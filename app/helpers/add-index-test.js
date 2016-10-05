@@ -1,3 +1,5 @@
+/* eslint no-sync: off */
+
 'use strict';
 
 /**
@@ -8,6 +10,7 @@ var fs = require( 'fs' );
 
 /**
  * @param {Base} generator
+ * @returns {undefined}
  */
 function addIndexTest( generator ) {
   var stat;
