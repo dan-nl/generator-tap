@@ -6,6 +6,7 @@
  * module dependencies
  */
 var addDirectory = require( './helpers/add-directory' );
+var addIndexTest = require( './helpers/add-index-test' );
 
 /**
  * @returns {undefined}
@@ -16,6 +17,7 @@ function writing() {
   }
 
   addDirectory( this );
+  addIndexTest( this );
 }
 
 module.exports = writing;

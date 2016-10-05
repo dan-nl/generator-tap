@@ -3,6 +3,19 @@
 
 [yeoman generator][yeoman-getting-started-url] that sets up [tap][tap-url], and optionally, [sinon][sinon-url], in the target project
 
+adds the following npm scripts to the `package.json` file:
+
+```json
+"scripts": {
+  "cover:browser": "npm test -- --coverage-report=lcov",
+  "cover:cli": "npm test -- --cov",
+  "cover:travis": "npm test -- --coverage-report=lcov --no-browser",
+  "test": "tap test/**/*.test.js --reporter spec"
+}
+```
+
+<small><i>note: the generator will not overwrite a test script if it already exists in a package.json file, unless it’s the default `echo \"Error: no test specified\" && exit 1` script</i></small>
+
 ## installation
 ```bash
 npm install -g generator-tap
