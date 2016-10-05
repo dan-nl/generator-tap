@@ -1,10 +1,6 @@
 'use strict';
 
-/**
- * @returns {Array}
- */
-function getGeneratorPrompts() {
-  return [
+var prompts = [
     {
       default: true,
       message: 'install tap',
@@ -21,6 +17,5 @@ function getGeneratorPrompts() {
       }
     }
   ];
-}
 
-module.exports = getGeneratorPrompts;
+module.exports = prompts;
