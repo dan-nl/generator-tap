@@ -14,7 +14,7 @@ adds the following npm scripts to the `package.json` file:
 }
 ```
 
-<small><i>note: the generator will not overwrite a test script if it already exists in a package.json file, unless it’s the default `echo \"Error: no test specified\" && exit 1` script</i></small>
+*note*: the generator will not overwrite a test script if it already exists in a package.json file, unless it’s the default `echo \"Error: no test specified\" && exit 1` script
 
 ## installation
 ```bash
