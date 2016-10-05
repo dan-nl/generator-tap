@@ -7,7 +7,8 @@ var intro = [
   '',
   'this generator will run the following tasks:',
   '',
-  '  * install tap and optionally sinon',
+  '  * install tap',
+  '  * optionally install sinon',
   ''
 ].join( '\n' );
 

@@ -1,5 +1,8 @@
 'use strict';
 
+/**
+ * @type {*[]}
+ */
 var prompts = [
     {
       default: true,
